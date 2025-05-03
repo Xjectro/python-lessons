@@ -6,7 +6,7 @@ while True:
     food = input("Enter food to buy (q to quit): ")
     if food.lower() == "q":
         break
-    price = float(input(f"Enter price for {food}: "))
+    price = float(input(f"Enter price for {food}: $"))
     foods.append(food)
     prices.append(price)
     total += price
