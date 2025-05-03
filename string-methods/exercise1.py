@@ -7,7 +7,7 @@ username = input("Enter a username: ")
 
 if len(username) > 12:
     print("Username must be no more than 12 characters.")
-elif not username.find(" ") == -1   :
+elif not username.find(" ") == -1:
     print("Username must not contain spaces.")
 elif not username.isalpha():
     print("Username must not contain digits.")
