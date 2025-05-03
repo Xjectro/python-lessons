@@ -4,9 +4,9 @@
 name = input("What is your name?: ")
 age = input("How old are you?: ")
 
-age = int(age) # Convert age to integer
+age = int(age)  # Convert age to integer
 # or age = int(input("How old are you?: ")) # Convert age to integer in one line
-age += 1 # Increment age by 1
+age += 1  # Increment age by 1
 
 
 print(f"Hello {name}")
