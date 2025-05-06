@@ -1,1 +1,1 @@
-# Shopping cart program in python
+# Shopping Cart Program in Python
