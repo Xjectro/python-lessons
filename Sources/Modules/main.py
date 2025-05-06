@@ -4,6 +4,6 @@
 
 # print(pi)
 
-import example
+import my_module as my_module
 
-print(example.pi)
+print(my_module.pi)
