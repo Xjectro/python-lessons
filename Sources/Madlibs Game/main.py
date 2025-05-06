@@ -1,7 +1,3 @@
-# Madlibs game
-# word game where you create a story
-# by filling in blanks with random words
-
 adjective1 = input("Enter an adjective (description): ")
 noun1 = input("Enter a noun (person, place, thing): ")
 adjective2 = input("Enter an adjective (description): ")
