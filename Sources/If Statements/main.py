@@ -1,6 +1,3 @@
-# if = Do some code only IF some condition is True
-#      Else do someting else
-
 age = int(input("Enter your age: "))
 
 if age >= 100:
