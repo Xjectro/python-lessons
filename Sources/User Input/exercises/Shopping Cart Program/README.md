@@ -1,1 +1,1 @@
-# Sopping Cart Program
+# Shopping Cart Program
