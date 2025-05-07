@@ -24,42 +24,30 @@ csv_file = SimpleNamespace(
     ],
 )
 
-try:
-    with open(file=json_file.file_path, mode="w") as file:
-        json.dump(json_file.content, file, indent=4)
-        print(f"File {json_file.file_path} created successfully.")
-        print(f"Content: {json_file.content}")
-except FileExistsError:
-    print(f"File {json_file.file_path} already exists.")
-except FileNotFoundError:
-    print(f"File {json_file.file_path} not found.")
-except Exception as e:
-    print(f"Error creating file {json_file.file_path}: {e}")
+
+def write_file(file_path, content, type):
+    try:
+        with open(file_path, mode="w") as file:
+            if type == "txt":
+                file.write(content)
+            elif type == "json":
+                json.dump(content, file, indent=4)
+            elif type == "csv":
+                writer = csv.writer(file)
+                for row in content:
+                    writer.writerow(row)
+            else:
+                raise ValueError("Unsupported file type")
+            print(f"File {file_path} created successfully.")
+            print(f"Content: {content}")
+    except FileExistsError:
+        print(f"File {file_path} already exists.")
+    except FileNotFoundError:
+        print(f"File {file_path} not found.")
+    except Exception as e:
+        print(f"Error creating file {file_path}: {e}")
 
 
-try:
-    with open(file=csv_file.file_path, mode="w", newline="") as file:
-        writer = csv.writer(file)
-        for row in csv_file.content:
-            writer.writerow(row)
-        print(f"File {csv_file.file_path} created successfully.")
-        print(f"Content: {csv_file.content}")
-except FileExistsError:
-    print(f"File {csv_file.file_path} already exists.")
-except FileNotFoundError:
-    print(f"File {csv_file.file_path} not found.")
-except Exception as e:
-    print(f"Error creating file {csv_file.file_path}: {e}")
-
-
-try:
-    with open(file=txt_file.file_path, mode="w") as file:
-        file.write(txt_file.content)
-        print(f"File {txt_file.file_path} created successfully.")
-        print(f"Content: {txt_file.content}")
-except FileExistsError:
-    print(f"File {txt_file.file_path} already exists.")
-except FileNotFoundError:
-    print(f"File {txt_file.file_path} not found.")
-except Exception as e:
-    print(f"Error creating file {txt_file.file_path}: {e}")
+write_file(json_file.file_path, json_file.content, "json")
+write_file(csv_file.file_path, csv_file.content, "csv")
+write_file(txt_file.file_path, txt_file.content, "txt")
