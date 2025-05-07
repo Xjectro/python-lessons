@@ -2,7 +2,7 @@ from types import SimpleNamespace
 import json
 import csv
 
-base_path = "c:/Users/{username}/Documents/GitHub/python-lessons/Sources/Writing Files/"
+base_path = "Assets/"
 
 txt_file = SimpleNamespace(
     file_path=base_path + "output.txt",
