@@ -1,7 +1,7 @@
 import json
 import csv
 
-base_path = "c:/Users/{username}/Documents/GitHub/python-lessons/Sources/Reading Files/"
+base_path = "Assets/"
 
 txt_file_path = base_path + "input.txt"
 json_file_path = base_path + "input.json"
