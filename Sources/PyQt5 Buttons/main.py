@@ -4,6 +4,8 @@ from PyQt5.QtWidgets import (
     QMainWindow,
     QLabel,
     QWidget,
+    QVBoxLayout,
+    QHBoxLayout,
     QGridLayout,
 )
 from PyQt5.QtGui import QIcon, QPixmap
