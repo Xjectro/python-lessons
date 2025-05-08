@@ -2,7 +2,7 @@ import sys
 from PyQt5.QtWidgets import (
     QApplication,
     QMainWindow,
-    QLabel,
+   QPushButton,QLabel
 )
 from PyQt5.QtGui import QIcon, QPixmap
 from PyQt5.QtCore import Qt
@@ -17,7 +17,7 @@ class MainWindow(QMainWindow):
         self.initUI()
 
     def initUI(self):
-     pass
+        pass
 
 
 def main():

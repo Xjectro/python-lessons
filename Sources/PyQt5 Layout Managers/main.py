@@ -6,8 +6,7 @@ from PyQt5.QtWidgets import (
     QWidget,
     QGridLayout,
 )
-from PyQt5.QtGui import QIcon, QPixmap
-from PyQt5.QtCore import Qt
+from PyQt5.QtGui import QIcon
 
 
 class MainWindow(QMainWindow):
