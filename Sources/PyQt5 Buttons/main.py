@@ -1,8 +1,6 @@
 import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QLabel
-from PyQt5.QtGui import QIcon, QPixmap
-from PyQt5.QtCore import Qt
-import time
+from PyQt5.QtGui import QIcon
 
 
 class MainWindow(QMainWindow):
