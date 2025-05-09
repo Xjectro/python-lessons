@@ -10,6 +10,7 @@
   - `blueprint.png`: Sample image for demonstrations.
   - `input.csv`, `input.json`, `input.txt`: Example input data files for data handling lessons.
   - `output.csv`, `output.json`, `output.txt`: Corresponding output data files for verification.
+    
 
 - **Sources/**: Contains lesson folders for each topic (e.g., Variables, Functions, Lists, Sets & Tuples, Control Flow, OOP, etc.)
   - Each folder includes:
